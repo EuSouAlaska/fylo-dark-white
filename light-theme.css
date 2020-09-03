@@ -105,6 +105,7 @@ body {
   background-repeat: no-repeat;
   background-image: url("images/bg-curvy-desktop-white.svg");
   background-position: bottom;
+  margin-bottom: -1px;
 }
 
 .intro img {
@@ -702,7 +703,6 @@ footer img {
   .intro {
     height: 400px;
     opacity: 100%;
-    background-image: url("images/bg-curvy-desktop-white.svg");
   }
   .intro h1 {
     font-size: 24px;
