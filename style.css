@@ -490,6 +490,7 @@ footer img {
   height: 20px;
   position: relative;
   top: 5px;
+  transition: 3.5s ease;
 }
 
 /* media */

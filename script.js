@@ -4,10 +4,10 @@ var currentTheme = "light";
 themeSwitcher.addEventListener(
   "click",
   function () {
-    var lightTheme = "./index-light-theme.css";
+    var lightTheme = "./light-theme.css";
     var darkTheme = "./style.css";
 
-    var oldCss = document.getElementsByTagName("link").item(3);
+    var oldCss = document.getElementsByTagName("link").item(2);
 
     var newCss = document.createElement("link");
     newCss.setAttribute("rel", "stylesheet");
