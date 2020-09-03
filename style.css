@@ -56,6 +56,15 @@ body {
   height: 3000px;
   color: var(--font-color);
 }
+.attribution {
+  text-align: center;
+  color: var(--font-footer-color);
+  padding: 20px;
+  font-size: 14px;
+}
+.attribution a {
+  color: var(--link-color);
+}
 
 .container {
   margin-right: auto;

@@ -25,3 +25,5 @@ themeSwitcher.addEventListener(
   },
   false
 );
+
+/* SCRIPT BY https://github.com/winstoncodes */
