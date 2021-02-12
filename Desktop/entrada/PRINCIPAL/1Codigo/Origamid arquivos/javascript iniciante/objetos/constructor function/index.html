@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Animais Fantásticos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<ul>
+  <li>item1</li>
+  <li>item2</li>
+  <li>item3</li>
+</ul>
+
+<script type="text/javascript" src="script.js"></script>
+<script>
+  /*   function Dom(seletor) {
+    this.element = function () {
+      return document.querySelector(seletor)
+    }
+    this.ativar = function (classe) {
+      this.element().classList.add(classe)
+    }
+     this.ativarT = function (classe) {
+      this.element().classList.toggle(classe)
+    }
+
+  }
+  li3 = new Dom("li"); */
+
+
+  //.element()
+  //.elements
+  //.elementList()
+  //.ativo()
+  //.ativoBody()
+  // toggleBody()
+  // ativoToggle()
+  // addClassAll()
+  // ativoRemove()
+
+  function Data(seletor) {
+
+    //retorna elemento
+    this.element = function () {
+      return document.querySelector(seletor)
+    };
+
+    //retorna lista de Elementos
+    const elementList = document.querySelectorAll(seletor);
+    this.elements = elementList;
+
+    //add classe no elemento
+    this.ativo = function (classe) {
+      this.element().classList.add(classe)
+    };
+
+    //add classe no body
+    this.ativoBody = function (classe) {
+      document.body.classList.add(classe)
+    };
+
+      //classe toggle  body
+      this.toggleBody = function (classe) {
+      document.body.classList.toggle(classe)
+    };
+
+
+    //add class NodeList
+    this.addClassAll = function (classe) {
+      elementList.forEach((i) => {
+        i.classList.add(classe)
+      })
+    };
+
+    //class toggle item
+    this.ativoToggle = function (classe) {
+      this.element().classList.toggle(classe)
+    };
+
+    //remove class item
+    this.ativoRemove = function (classe) {
+      this.element().classList.remove(classe)
+    };
+
+  }
+
+  let oi = new Data("div");
+
+
+
+  function eta() {
+    if (oi) {
+      oi.ativoBody("body__ul")
+    }
+  }
+
+  eta()
+
+
+
+  console.log(document.body);
+</script>
+</body>
+
+</html>
