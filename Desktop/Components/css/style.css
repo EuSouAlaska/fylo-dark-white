@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body,
+html {
+    height: 100%;
+    background-color: #2fb0b5
+}
+
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: 2px;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px
+}
+
+.navTrigger i:nth-child(1) {
+    animation: outT .8s backwards;
+    animation-direction: reverse
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 5px 0;
+    animation: outM .8s backwards;
+    animation-direction: reverse
+}
+
+.navTrigger i:nth-child(3) {
+    animation: outBtm .8s backwards;
+    animation-direction: reverse
+}
+
+.navTrigger.active i:nth-child(1) {
+    animation: inT .8s forwards
+}
+
+.navTrigger.active i:nth-child(2) {
+    animation: inM .8s forwards
+}
+
+.navTrigger.active i:nth-child(3) {
+    animation: inBtm .8s forwards
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(45deg)
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(45deg)
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg)
+    }
+
+    50% {
+        transform: translateY(9px) rotate(0deg)
+    }
+
+    100% {
+        transform: translateY(9px) rotate(135deg)
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg)
+    }
+
+    50% {
+        transform: translateY(9px) rotate(0deg)
+    }
+
+    100% {
+        transform: translateY(9px) rotate(135deg)
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg)
+    }
+
+    50% {
+        transform: translateY(-9px) rotate(0deg)
+    }
+
+    100% {
+        transform: translateY(-9px) rotate(135deg)
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg)
+    }
+
+    50% {
+        transform: translateY(-9px) rotate(0deg)
+    }
+
+    100% {
+        transform: translateY(-9px) rotate(135deg)
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
